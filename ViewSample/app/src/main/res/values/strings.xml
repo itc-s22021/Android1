@@ -6,4 +6,5 @@
     <string name="cd_food">フード</string>
     <string name="rb_male">男</string>
     <string name="rb_female">女</string>
+    <string name="rb_none">どちらでもない</string>
 </resources>

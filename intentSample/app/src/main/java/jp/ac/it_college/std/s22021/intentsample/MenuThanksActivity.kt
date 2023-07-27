@@ -16,7 +16,7 @@ class MenuThanksActivity : AppCompatActivity() {
         val menuPrice = intent.getIntExtra("menuPrice", 0)
 
         binding.tvMenuName.text = menuName
-        binding.tvMenuYen.text = "%,d".format(menuPrice)
+        binding.tvPrice2.text = "%,d".format(menuPrice)
 
         binding.btThxBack.setOnClickListener {
             finish()

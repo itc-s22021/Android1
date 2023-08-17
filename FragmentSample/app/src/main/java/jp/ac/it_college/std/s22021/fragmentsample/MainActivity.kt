@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             setReorderingAllowed(true)
             addToBackStack("Only List")
             replace(
-                R.id.fragmentMainContainer, MenuThanksFragment::class.java.java,
+                R.id.fragmentMainContainer, MenuThanksFragment::class.java,
                 bundleOf(
                     ARG_NAME to bundle.getString(RESULT_NAME, ""),
                     ARG_PRICE to bundle.getInt(RESULT_PRICE, 0)

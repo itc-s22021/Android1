@@ -10,7 +10,7 @@ import jp.ac.it_college.std.s22021.fragmentsample.databinding.FragmentMenuThanks
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 internal const val ARG_NAME = "menuName"
-internal val ARG_PRICE = "menuPrice"
+internal const val ARG_PRICE = "menuPrice"
 
 /**
  * A simple [Fragment] subclass.
@@ -41,7 +41,7 @@ class MenuThanksFragment : Fragment() {
         val menuPrice = arguments?.getInt(ARG_PRICE) ?: 0
 
         binding.tvMenuName.text = menuName
-        binding.tvMenuPrice.text = "%.d".format(menuPrice)
+        binding.tvMenuPrice.text = "%,d".format(menuPrice)
 
         //ボタンのイベントリスナを設定
         binding.btThxBack.setOnClickListener(::onBackButtonClick)
@@ -54,44 +54,5 @@ class MenuThanksFragment : Fragment() {
 
     private fun onBackButtonClick(v: View) {
         parentFragmentManager.popBackStack()
-    }
-}
-
-
-/*class MenuThanksFragment : Fragment() {
-
-    private var _binding: FragmentMenuThanksBinding? = null
-
-    private val binding get() = _binding!!
-
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        _binding = FragmentMenuThanksBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        val menuName = arguments?.getString(ARG_NAME) ?: ""
-
-        val menuPrice = arguments?.getInt(ARG_PRICE) ?: 0
-
-        binding.tvMenuName.text = menuName
-        binding.tvMenuPrice.text = "%.d"
     }
 }

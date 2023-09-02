@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lv_cocktail_list">
+        <item>ホワイトレディー</item>
+        <item>バラライカ</item>
+        <item>XYZ</item>
+        <item>ニューヨーク</item>
+        <item>マンハッタン</item>
+        <item>ミシシッピミュール</item>
+        <item>ブルーハワイ</item>
+        <item>マイ・タイ</item>
+        <item>マティーニ</item>
+        <item>ブルームーン</item>
+        <item>モヒート</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">データベースサンプル</string>
+    <string name="btm_save">保存</string>
+    <string name="tv_lb_name">選択されたカクテル:</string>
+    <string name="tv_lb_note">感想:</string>
+    <string name="tv_name">未選択</string>
+    <style name="Base.Theme.DatabaseSample" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.DatabaseSample" parent="Base.Theme.DatabaseSample"/>
+</resources>

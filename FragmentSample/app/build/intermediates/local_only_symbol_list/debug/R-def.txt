@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btThxBack
+id fragmentMainContainer
+id menuList
+id menuName
+id menuPrice
+id priceUnit
+id tvMenuName
+id tvMenuPrice
+id tvMenuYen
+id tvThxTitle
+id tvthxDesc
+layout activity_main
+layout fragment_menu_lisrt
+layout fragment_menu_thanks
+layout menu_row
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string bt_thx_back
+string hello_blank_fragment
+string tv_price_unit
+string tv_price_unit２
+string tv_price_unit３
+string tv_thx_desc
+string tv_thx_title
+string 円
+style Base.Theme.FragmentSample
+style Theme.FragmentSample
+xml backup_rules
+xml data_extraction_rules

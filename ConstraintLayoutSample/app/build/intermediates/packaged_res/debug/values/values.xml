@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">ConstraintLayoutサンプル</string>
+    <string name="tv_clear">クリア</string>
+    <string name="tv_comment">質問内容</string>
+    <string name="tv_confirm">確認</string>
+    <string name="tv_mail">メールアドレス</string>
+    <string name="tv_name">名前</string>
+    <string name="tv_send">送信</string>
+    <string name="tv_title">必要な情報を入力してください。</string>
+    <style name="Base.Theme.ConstraintLayoutSample" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.ConstraintLayoutSample" parent="Base.Theme.ConstraintLayoutSample"/>
+</resources>

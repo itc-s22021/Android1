@@ -1,0 +1,28 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id etComment
+id etMail
+id etName
+id tvComment
+id tvMail
+id tvName
+id tvTitle
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string tv_clear
+string tv_comment
+string tv_confirm
+string tv_mail
+string tv_name
+string tv_send
+string tv_title
+style Base.Theme.ConstraintLayoutSample
+style Theme.ConstraintLayoutSample
+xml backup_rules
+xml data_extraction_rules

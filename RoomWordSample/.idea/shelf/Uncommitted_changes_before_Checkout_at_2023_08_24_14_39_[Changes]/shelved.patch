@@ -1,0 +1,33 @@
+Index: ../DatabaseSample/app/src/main/java/jp/ac/it_college/std/s22021/databasesample/CocktailAdapter.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package jp.ac.it_college.std.s22021.databasesample\n\nimport android.view.LayoutInflater\nimport android.view.ViewGroup\nimport androidx.recyclerview.widget.RecyclerView\nimport jp.ac.it_college.std.s22021.databasesample.databinding.MenuRowBinding\n\nclass CocktailAdapter(\n    private val data: List<String>,\n    private val callback: (Int ,String) -> Unit\n) : RecyclerView.Adapter<CocktailAdapter.ViewHolder>() {\n    class ViewHolder(internal val binding: MenuRowBinding) : RecyclerView.ViewHolder(binding.root)\n\n    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int)=\n        ViewHolder(MenuRowBinding.inflate(LayoutInflater.from(parent.context), parent, false))\n\n    override fun getItemCount(): Int = data.size\n\n    override fun onBindViewHolder(holder: ViewHolder, position: Int) {\n        holder.binding.tvCocktailName.text = data[position]\n        holder.binding.root.setOnClickListener {\n            callback(position, data[position])\n        }\n    }\n}
+===================================================================
+diff --git a/../DatabaseSample/app/src/main/java/jp/ac/it_college/std/s22021/databasesample/CocktailAdapter.kt b/../DatabaseSample/app/src/main/java/jp/ac/it_college/std/s22021/databasesample/CocktailAdapter.kt
+--- a/../DatabaseSample/app/src/main/java/jp/ac/it_college/std/s22021/databasesample/CocktailAdapter.kt	
++++ b/../DatabaseSample/app/src/main/java/jp/ac/it_college/std/s22021/databasesample/CocktailAdapter.kt	
+@@ -22,4 +22,5 @@
+             callback(position, data[position])
+         }
+     }
++    override fun getItemCount() = data.size
+ }
+\ No newline at end of file
+Index: ../UncolDatabaseSample/app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:tools=\"http://schemas.android.com/tools\">\n\n    <application\n        android:allowBackup=\"true\"\n        android:dataExtractionRules=\"@xml/data_extraction_rules\"\n        android:fullBackupContent=\"@xml/backup_rules\"\n        android:icon=\"@mipmap/ic_launcher\"\n        android:label=\"@string/app_name\"\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\n        android:supportsRtl=\"true\"\n        android:theme=\"@style/Theme.UncolDatabaseSample\"\n        tools:targetApi=\"31\">\n        <activity\n            android:name=\".MainActivity\"\n            android:exported=\"true\">\n            <intent-filter>\n                <action android:name=\"android.intent.action.MAIN\" />\n\n                <category android:name=\"android.intent.category.LAUNCHER\" />\n            </intent-filter>\n        </activity>\n    </application>\n\n</manifest>
+===================================================================
+diff --git a/../UncolDatabaseSample/app/src/main/AndroidManifest.xml b/../UncolDatabaseSample/app/src/main/AndroidManifest.xml
+--- a/../UncolDatabaseSample/app/src/main/AndroidManifest.xml	
++++ b/../UncolDatabaseSample/app/src/main/AndroidManifest.xml	
+@@ -13,6 +13,9 @@
+         android:theme="@style/Theme.UncolDatabaseSample"
+         tools:targetApi="31">
+         <activity
++            android:name=".AddActivity"
++            android:exported="false" />
++        <activity
+             android:name=".MainActivity"
+             android:exported="true">
+             <intent-filter>

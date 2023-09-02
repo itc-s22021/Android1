@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/s22021/.gradle/daemon/8.0/jp.ac.it_college.std.s22021.fragmentsample.app-mergeDebugResources-36:/layout/activity_main.xml",
+        "source": "/home/s22021/.gradle/daemon/8.0/jp.ac.it_college.std.s22021.fragmentsample.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/s22021/.gradle/daemon/8.0/jp.ac.it_college.std.s22021.fragmentsample.app-mergeDebugResources-36:/layout/fragment_menu_lisrt.xml",
+        "source": "/home/s22021/.gradle/daemon/8.0/jp.ac.it_college.std.s22021.fragmentsample.app-main-39:/layout/fragment_menu_lisrt.xml"
+    },
+    {
+        "merged": "jp.ac.it_college.std.s22021.fragmentsample.app-mergeDebugResources-36:/layout/fragment_menu_thanks.xml",
+        "source": "jp.ac.it_college.std.s22021.fragmentsample.app-main-39:/layout/fragment_menu_thanks.xml"
+    },
+    {
+        "merged": "/home/s22021/.gradle/daemon/8.0/jp.ac.it_college.std.s22021.fragmentsample.app-mergeDebugResources-36:/layout/menu_row.xml",
+        "source": "/home/s22021/.gradle/daemon/8.0/jp.ac.it_college.std.s22021.fragmentsample.app-main-39:/layout/menu_row.xml"
+    },
+    {
+        "merged": "/home/s22021/.gradle/daemon/8.0/jp.ac.it_college.std.s22021.fragmentsample.app-mergeDebugResources-36:/layout/fragment_menu_thanks.xml",
+        "source": "/home/s22021/.gradle/daemon/8.0/jp.ac.it_college.std.s22021.fragmentsample.app-main-39:/layout/fragment_menu_thanks.xml"
+    }
+]

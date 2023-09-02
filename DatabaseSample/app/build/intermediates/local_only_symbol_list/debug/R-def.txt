@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+array lv_cocktail_list
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnSave
+id etNote
+id guideline
+id lvCocktail
+id tvCocktailName
+id tvLbName
+id tvLbNote
+layout activity_main
+layout menu_row
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string btm_save
+string tv_lb_name
+string tv_lb_note
+string tv_name
+style Base.Theme.DatabaseSample
+style Theme.DatabaseSample
+xml backup_rules
+xml data_extraction_rules
